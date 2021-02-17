@@ -1,12 +1,5 @@
-// out: ./main.min.css, compress: true, sourceMap: true
+// out: ./../css/main.min.css, compress: true, sourceMap: true
 
-/* Подключаем шрифты */
-@font-face {
-    font-family: "RobotoRegular";
-    src: url(./../assets/fonts/RobotoRegular.ttf);
-    font-style: normal;
-    font-stretch: normal;
-}
 
 /* Общие стили */
 * {
@@ -19,6 +12,11 @@ body {
     box-sizing: border-box;
 }
 
+body {
+    background: url(./../assets/images/Football.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 
-/* прописываем стили */
 
+// relativeUrls: true
+@import "./block/_body.less";
