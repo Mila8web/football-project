@@ -1,34 +1,39 @@
-//maim: ./../main.less
+//main: ./../main.less
 
-
-.container {
+.box {
+    // overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./../../assets/images/Football.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
     &__title {
         text-transform: uppercase;
         color: rgb(245, 236, 237);
-        font-size: 50px;
+        font-size: 90px;
         text-align: center;
     }
-
-    &__clip-parh {
-        clip-path: polygon(0 0, 35% 0, 36% 27%, 75% 100%, 0 100%, 0% 50%);
-        max-width: 100vw;
-        height: auto;
-        background-color: yellow;
-        shape-outside: polygon(0 0, 35% 0, 36% 27%, 75% 100%, 0 100%, 0% 50%);
+    
+    &__clip-path {
+        clip-path: polygon(0 0, 67% 0, 63% 26%, 100% 100%, 0 100%, 0% 50%);
+        float: left;
+        width: 61%;
+        height: 100vh;
+        shape-outside: polygon(0 0, 67% 0, 63% 26%, 100% 100%, 0 100%, 0% 50%);
     }
 
-    &__text-first {
-        color: rgb(255, 250, 250);
-        font-size: 25px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
+    &__text-first,
     &__text-second {
-        color: rgb(246, 245, 253);
-        font-size: 25px;
+        color: rgb(255, 250, 250);
+        font-size: 30px;
         font-family: 'Times New Roman', Times, serif;
+        padding-right: 20px;
+        text-align: justify;
+        // text-indent: 40px;
     }
 }
 
 
+
+    
